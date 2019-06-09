@@ -3,6 +3,7 @@
 
 ### Constructor
 *[AntClass]* **(ClassName)**
+
 [Calls the constructor function with a newly constructed AntObject 
 as one of the arguments. The return is dependant on what the set constructor function returns]
 
@@ -162,6 +163,7 @@ of values directly in the AntObject]
 
 ### Constructor
 *[AntEvent]* **()**
+
 [Creates a new AntEvent] 
 
 ### Properties
@@ -195,6 +197,26 @@ of values directly in the AntObject]
 
 [Will disconnect all connections connected to the event]
 
+# AntConnection
 
+### Constructor
+*[AntConnection]* **(func, signal)**
+
+[Constructs a new AntConnection with the func binded to it and signal being the 
+event which the connection was connected to]
+
+### Properties
+*func* **func**
+
+[Is the function that is binded to the connection]
+
+*AntEvent* **Signal**
+
+[Is the AntEvent which the connection was connected to]
+
+### Functions
+**:Disconnect()**
+
+[Disconnects the connection from the AntEvent]
 
 
