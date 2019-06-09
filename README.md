@@ -5,4 +5,4 @@ AntWorks features a very powerful yet simple approach to object oriented program
 Api documentations and examples can be found in the repository.
 
 # License
-MIT License Copyright (c) 2016 ScripterGo
+MIT License Copyright (c) 2019 ScripterGo
