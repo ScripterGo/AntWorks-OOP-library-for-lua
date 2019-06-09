@@ -21,11 +21,11 @@ as one of the arguments. The return is dependant on what the set constructor fun
 
 ### Functions
 
-**(AntObject)** *:Clone()*
+**[AntObject]** *:Clone()*
 
 [Returns a clone of the Object]
 
-**(dictionary)** *:GetClassesInheritingFrom()*
+**[dictionary]** *:GetClassesInheritingFrom()*
 
 [Returns a dictionary of ClassNames which is inherited from]
 
