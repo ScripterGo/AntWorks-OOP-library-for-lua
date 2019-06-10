@@ -1,8 +1,6 @@
 
-
-
 local AntClass = require("AntClass")
-local ValueInstanceClass = AntClass.new("ValueInstance")
+local ValueInstanceClass = AntClass("ValueInstance")
 
 ValueInstanceClass:SetConstruct(function(self, ValueType)
 	assert(script[ValueType], "Incompatible datatype")
