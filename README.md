@@ -16,10 +16,10 @@ AntWorks supports most of which an OOP library would need, some of which is:
  
 **Changed event** - Including a changed event which will fire whenever an index-s value within your AntObject is changed.
 
-### Documentation
+## Documentation
 Api documentations and examples can be found in the repository.
 
-### License
+## License
 MIT License Copyright (c) 2019 ScripterGo
 
  
