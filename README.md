@@ -10,7 +10,7 @@ AntWorks supports most of which an OOP library would need, some of which is:
 
 **Multimethods** - Supports the creation and usage of multimethods.
 
-**readOnly/locked properites** - The ability to lock indexes making them readOnly.
+**readOnly/locked properites** - The ability to lock indexes making them readOnly. You could also lock the entire object and then unlock specific indexes.
 
 **Events** - Allows you to easily create new custom events, with easy and simple management of connections helping you avoid memory leaks.
  
