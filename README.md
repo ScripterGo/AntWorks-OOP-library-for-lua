@@ -12,7 +12,7 @@ AntWorks supports most of which an OOP library would need, some of which is:
 
 **readOnly/locked properites** - The ability to lock indexes making them readOnly. You could also lock the entire object and then unlock specific indexes.
 
-**Events** - Allows you to easily create new custom events, with easy and simple management of connections helping you avoid memory leaks.
+**Events** - Allows you to easily create new custom events, with simple management of connections helping you avoid memory leaks.
  
 **Changed event** - Including a changed event which will fire whenever an index-s value within your AntObject is changed.
 
@@ -22,4 +22,4 @@ Api documentations and examples can be found in the repository.
 ## License
 MIT License Copyright (c) 2019 ScripterGo
 
- 
+
