@@ -2,7 +2,7 @@
 AntWorks features a very powerful yet simple approach to object oriented programming in rbxLua. Get started by visiting the setup page within the repository.
 
 ## Features
-AntWorks supports most of which an OOP library would need.
+AntWorks supports most of which an OOP library would need, some of which is:
 
 **Inheritence** - Very flexible inheritance allowing both objects and classes to inherit from multiple sources.
 
