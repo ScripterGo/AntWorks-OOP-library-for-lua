@@ -1,6 +1,6 @@
 
 # How to use?
-Download the AntWorks.rbxm from the repository. Unpack it inside Roblox Studio and place the content folders inside ReplicatedStorage. Then just require the AntClass module whenever you wish you create a new class.
+Download the AntWorks.rbxm or AntWorks folder from the repository. Unpack it and specify the desired file paths within the "requires". Then just require the AntClass module whenever you wish you create a new class. The only aspect which take use of the roblox api, is the event system. A pure lua solution is possible to create, although i didnt include it.
 
 # Creating your first class
 ```lua
