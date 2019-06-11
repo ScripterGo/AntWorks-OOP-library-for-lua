@@ -54,10 +54,13 @@ local function Constructor(ClassName)---Creating a new AntClass
 	Class.InheritFrom = {} ----Table containing every class to inherit from
 	Class.ClassName = ClassName
 	Class.Constructor = nil -----the constructor function
+	Class.UsingObject = true
+	
 	setmetatable(Class, AntClass) 
 	
-	function Class:SetConstruct(func)
+	function Class:SetConstruct(func, usingObject)
 		rawset(self, "Constructor", func)
+		rawset(self, "UsingObject", usingObject or (usingObject == nil))
 	end
 	
 	function Class.new(...)
@@ -65,8 +68,12 @@ local function Constructor(ClassName)---Creating a new AntClass
 			warn("You need to set a constructor function first!")
 		end
 	
-		local Object = ObjectClass(Class)
-		return Class.Constructor(Object, ...)
+		if Class.UsingObject then
+			local Object = ObjectClass(Class)
+			return Class.Constructor(Object, ...)
+		else
+			return Class.Constructor(...)
+		end
 	end
 	
 	return Class
