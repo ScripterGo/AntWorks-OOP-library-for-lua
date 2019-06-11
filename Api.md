@@ -46,9 +46,9 @@ as one of the arguments. The return is dependant on what the set constructor fun
 
 [Returns true if inheriting from a class with the given ClassName or if Objects Classname == ClassName]
 
-**:SetConstruct(func)**
+**:SetConstruct(func, usingAntObject)**
 
-[Sets the constructor function to the given func]
+[Sets the constructor function to the given func. usingAntObject determines if an antObject is to be created whenever .new() is called, defaults to true.]
 
 *[Multimethod Object]* **:CreateMultimethod(index)**
 
