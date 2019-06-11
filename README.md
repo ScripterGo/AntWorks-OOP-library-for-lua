@@ -20,7 +20,7 @@ AntWorks supports most of which an OOP library would need, some of which is:
 Api documentations and examples can be found in the repository.
 
 ## Credits to
-**Ozzypig** - For repr, a function which i use to print out tables
+**Ozzypig** - For repr, a function which is used to print out tables.
 
 
 ## License
