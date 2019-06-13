@@ -16,7 +16,7 @@ local function Constructor(InstantietedBy)
 	Object.SuperLocked = false
 	Object.InstantiatedFrom = InstantietedBy
 	
-	Object:CreateEvent("Changed")
+	Object.Changed = Object.CreateEvent()
 	Object:LockProperty("Locked", "Unlocked", "DataTypeLimitations", "SuperLocked", "InheritFrom", "InstantiatedFrom", "Changed")
 	
 	local proxy = {}
@@ -123,10 +123,10 @@ function AntObject:ClearConnections(tab)
 	end	
 end
 
-function AntObject:CreateEvent(index)
+function AntObject.CreateEvent()
 	local EventClass = require(script.Parent.AntEvent)
 	local NewEvent = EventClass()
-	self[index] = NewEvent
+	--self[index] = NewEvent
 	
 	return NewEvent
 end

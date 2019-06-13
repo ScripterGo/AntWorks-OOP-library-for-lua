@@ -145,10 +145,10 @@ function AntClass:Is(ClassName) ---Checks if the class object is a certain type
 	return Bool
 end
 
-function AntClass:CreateMultimethod(index)
+function AntClass.CreateMultimethod()
 	local Multimethod = require(script.Parent.Multimethod)
 	local NewMultimethod = Multimethod.new()
-	self[index] = NewMultimethod
+	--self[index] = NewMultimethod
 	
 	return NewMultimethod
 end
