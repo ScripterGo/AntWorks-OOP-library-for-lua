@@ -50,9 +50,9 @@ as one of the arguments. The return is dependant on what the set constructor fun
 
 [Sets the constructor function to the given func. usingAntObject determines if an antObject is to be created whenever .new() is called, defaults to true.]
 
-*[Multimethod Object]* **:CreateMultimethod(index)**
+*[Multimethod Object]* **.CreateMultimethod()**
 
-[Creates a multimethod object at index]
+[Creates a new multimethod objects and returns it]
 
 # AntObject
 
@@ -127,9 +127,9 @@ of values directly in the AntObject]
 
 [Disconnects every connection connected to every event within the AntObject]
 
-**:CreateEvent(index)**
+**.CreateEvent()**
 
-[Just creates a new eventObject at index]
+[Just creates a new eventObject and returns it]
 
 ##### Inherited from AntClass
 
