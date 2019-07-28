@@ -29,7 +29,7 @@ end
 
 function AntEvent:Wait()
 	local Bindable = self.Bindable
-	Bindable.Event:Wait()
+	return Bindable.Event:Wait()
 end
 
 function AntEvent:ClearConnections()
