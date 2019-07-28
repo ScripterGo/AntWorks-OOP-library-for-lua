@@ -61,21 +61,20 @@ function Multimethod:UnRegister(func, ...)
 	end
 end
 
-function Multimethod:GetString(tab, Flatout ,Current)
+function Multimethod:GetString(tab, Flatout)
+	local s = nil
 	local Dispatch = self.Dispatch
-	if #tab == 0 then
-		return Current
-	end
-	local ToAdd = (Flatout == true and Dispatch(tab[1])) or tab[1]
 	
-	if Current == nil then
-		Current = ToAdd
-	else
-		Current = Current..", "..ToAdd
+	for i,v in pairs(tab) do
+		local ToAdd = (Flatout == true and Dispatch(v)) or v
+		if s == nil then
+			s = ToAdd
+		else
+			s = s..","..ToAdd
+		end
 	end
 	
-	table.remove(tab, 1)
-	return self:GetString(tab, Flatout, Current)
+	return s
 end
 
 
